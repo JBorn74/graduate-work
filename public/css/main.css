@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+* , html{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.wrapper{
+    height: 100%;
+}
+body{
+    font-family: 'Crimson Text', serif;
+    color: black;
+    font-weight: 400;
+    background: white;
+    width: 100%;
+    padding-left: 0%;
+    display: block;
+    align-content: center;
+}
+body,
+html{
+    height: 100%;
+
+}
+.wrapper{
+   display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+footer{
+    flex: 0 0 auto;
+}
+header{
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    transition: all 600ms ease;
+}
+
+button:hover {
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+
+header>.container{
+    width: 100%;
+    margin-left:5% ;
+    margin-right:5% ;
+    margin-top:10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+
+
+
+}
+
+header>.container>.logo img{
+    height: 150px;
+    float: left;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+header>.container>.logo >  span{
+    float: left;
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+    width: 400px;
+    margin-top:80px;
+    color: gray;
+    font-style: italic;
+
+}
+
+header > .container >.nav {
+    display: block;
+    float: right;
+    margin-top: 0;
+    margin-right: 10px;
+    color: gray;
+
+
+}
+
+header > .container >.nav a{
+    text-decoration: none;
+    font-size:large;
+    color: gray;
+    margin-left: 20px;
+
+}
+.main_text{
+    display: block;
+    width: 600px;
+
+    margin: auto;
+
+}
+
+body> .wrapper> .content> .main_text> h1{
+    font-size: 60px;
+    text-align: center;
+    color:black;
+    text-decoration:red ;
+    text-shadow: 5px 5px 15px gray;
+}
+body> .wrapper> .content> .main_text> p{
+    font-size: 20px;
+    text-align: center;
+    color:gray;
+    text-decoration:red ;
+    text-shadow: 5px 5px 15px gray;
+}
+
+body> .wrapper> .content> .main_text>form> input{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid rgba(99,99,99,0.36);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+body> .wrapper> .content> .main_text>form> textarea{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 80%;
+    min-height:  200px;
+    margin-left: 10%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid rgba(99,99,99,0.36);
+    border-radius: 2px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+
+body> .wrapper> .content> .main_text>form>  .btn {
+    margin-top: 20px;
+    width: auto;
+    margin-left: 10%;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+body> .wrapper> .content> .main_text>form>  .btn-reg {
+     background-color: red;
+     color: white;
+}
+body> .wrapper> .content> .main_text> form> button:focus {
+cursor: pointer;
+}
+
+body> .wrapper> .content> .main_text> form> p> a{
+    font-size: 20px;
+    text-align: center;
+    color: cadetblue ;
+    text-decoration:red ;
+    text-shadow: 5px 5px 15px gray;
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+
+footer{
+    background: black;
+
+}
+
+footer > .bottom-menu>{
+    width: 100%;
+    height: 200px;
+    display: block;
+    justify-content: space-between;
+}
+
+footer >.bottom-menu>.screen> img{
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    height: 30px;
+    background-color: white;
+
+}
+footer>.bottom-menu>.bottom-menu-text{
+    float: left;
+    display: block;
+    margin-left: 0;
+    margin-top: 20px    ;
+
+}
+footer>.bottom-menu>.bottom-menu-text p{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+footer>.bottom-menu>.social >.fab{
+    max-width: 50px;
+
+
+}
+.social{
+    float: right;
+    display: block;
+    margin-right: 100px;
+    margin-top: 10px;
+
+}
+.fab{
+margin-left: 20px;
+font-size: 40px;
+color: rebeccapurple;
+}
+.fab:hover{
+    color: red;
+    transition: all 600ms ease;
+}
+@media(max-width: 900px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+}

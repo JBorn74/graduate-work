@@ -1,0 +1,14 @@
+{
+    "name": "vendor/app",
+    "description": "This is my garduation work",
+    "type": "project",
+    "license": "n",
+    "require": {
+        "phpmailer/phpmailer": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/models"
+        }
+    }
+}
